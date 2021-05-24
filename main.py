@@ -46,18 +46,18 @@ FPS = 75
 screen = pygame.display.set_mode((1280, 720))
 pygame.display.set_caption("The Never Ending Story")
 
-bg = pygame.image.load('Assets/Sunny-land-assets-files/PNG/environment/layers/back.png').convert()
+bg = pygame.image.load('Assets/back.png').convert()
 bg = pygame.transform.scale((bg), (1280, 720))
 
-floor = pygame.image.load('Assets/Untitled.png')
+floor = pygame.image.load('Assets/Ground.png')
 floor_x_pos = 0
 floor_rect = pygame.Rect((100, 67), (0, 540))
 
-player = pygame.image.load('Assets/Adventurer-1/Individual Sprites/adventurer-idle-01.png')
+player = pygame.image.load('Assets/Player.png')
 player = pygame.transform.scale(player, (200, 148))
 player_rect = player.get_rect(center = (100, 540))
 
-block_surface = pygame.image.load('Assets/Sunny-land-assets-files/PNG/environment/props/block-big.png')
+block_surface = pygame.image.load('Assets/block.png')
 block_surface = pygame.transform.scale2x(block_surface)
 blockList = []
 blockHeight = [484, 540]
